@@ -11,7 +11,7 @@ let TranslateConfig = {
 
 const translateString =   (args) => {
     translate(args.word,TranslateConfig).then(result => {
-        console.log(result)
+        console.log(args.word + " : " + result)
     }).catch(err => {
         console.log(err)
     })
