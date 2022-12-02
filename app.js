@@ -6,7 +6,7 @@ const fs = require('fs');
 
 let TranslateConfig = {
     from: 'en',
-    to: 'es'
+    to: 'de'
 }
 
 const translateString =   (args) => {
@@ -41,5 +41,6 @@ app.listen(port, function () {
   console.log('Listening on port ' + port);
   var wsdl_path = "/wsdl";
   soap.listen(app, wsdl_path, serviceObject, xml);
+
   console.log("Check http://localhost:" + port + wsdl_path +"?wsdl to see if the service is working");
 });

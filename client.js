@@ -1,5 +1,5 @@
 const soap = require('soap');
-const url = 'http://localhost:8000/wsdl?wsdl';
+const url = 'http://127.0.0.1:8000/wsdl?wsdl';
 const prompt = require("prompt-sync")();
 
 soap.createClient(url, function (err, client) {
